@@ -58,6 +58,33 @@ helloButton.onclick = function(){
 	alert('Hello!');
 }
 
+// A function that calcualtes the grand total
+function calculateGrandTotal( prices ) {
+
+	// Create a variable to hold the grand total
+	var grandTotal = 0
+
+	// Loop over all the prices
+	for( var i = 0; i < prices.length; i++) {
+		grandTotal = grandTotal + prices[i]; 
+	}
+
+	//Display the grand total
+	console.log( grandTotal );
+
+} 
+
+// Some shopping carts
+var cart1 = [20, 15, 12, 30, 120, 36, 97];
+var cart2 = [24, 36, 48, 56, 64, 123, 1966];
+
+//call the function  calculateGrandTotal with data to send it i.e. cart1 and cart2 as defined above
+calculateGrandTotal( cart1 );
+calculateGrandTotal( cart2 );
+
+
+
+
 
 
 
