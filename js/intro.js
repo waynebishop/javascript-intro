@@ -37,6 +37,31 @@ if( myName.length == 0 ) {
 	console.log("Your name must be at most 10 characters. You have written " + myName.length);
 } 
 
+// An array (list, collection etc) of people. [] means create a literal array. Remember counts from 0.
+var people = ["Wayne","Karen","Shaun"];  
+
+console.log( people );
+
+console.log( people[0] );
+
+// Loop over all the people int he people array
+// and display their name in the console. i is short for iterations. i++ same as i=i+1 . 
+for( var i = 0; i < people.length; i++ ) {
+	console.log( people[i] );
+} 
+
+// Tell Javascript to find the button with the ID = Hello
+var helloButton = document.querySelector("#hello");
+
+// Listen for clicks on the hello button - event listener
+helloButton.onclick = function(){
+	alert('Hello!');
+}
+
+
+
+
+
 
 
 
